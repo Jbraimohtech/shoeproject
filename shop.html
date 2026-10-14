@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f6f2">
+    <meta name="description" content="Shop the VELON Footwear collection. Explore distinctive men's and women's shoes made for everyday movement.">
+    <title>Shop the collection — VELON Footwear</title>
+    <link rel="icon" type="image/png" href="images/logo-image/shoe-product-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body data-page="shop">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="homePage.html" aria-label="VELON Footwear home">
+                <img src="images/logo-image/shoe-product-logo.png" alt="">
+                <span>VELON FOOTWEAR</span>
+            </a>
+            <div class="nav-center" id="primary-navigation">
+                <ul class="nav-menu">
+                    <li><a href="homePage.html">Home</a></li>
+                    <li><a href="shop.html" aria-current="page">Shop</a></li>
+                    <li><a href="aboutPage.html">Our story</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-button" type="button" data-open-cart aria-label="Open shopping bag">
+                    Bag <span class="cart-count" data-cart-count>0</span>
+                </button>
+                <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-intro">
+            <p class="eyebrow">Find your pair</p>
+            <h1>The VELON collection</h1>
+            <p>Distinctive details, easy comfort, and a little extra confidence in every step. Pick a pair to find out more.</p>
+        </section>
+        <div class="shop-controls">
+            <label class="shop-search">
+                <span class="visually-hidden">Search shoes</span>
+                <input type="search" data-product-search placeholder="Search the collection…">
+            </label>
+            <label>
+                <span class="visually-hidden">Filter by collection</span>
+                <select data-product-filter>
+                    <option value="all">All shoes</option>
+                    <option value="Men">Men</option>
+                    <option value="Women">Women</option>
+                </select>
+            </label>
+        </div>
+        <p class="results-count" data-results-count aria-live="polite"></p>
+        <div class="product-grid" data-product-grid></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">VELON FOOTWEAR<p>Move with intention. Make it yours.</p></div>
+            <div>
+                <h2 class="footer-heading">Explore</h2>
+                <div class="footer-links">
+                    <a href="homePage.html">Home</a>
+                    <a href="aboutPage.html">Our story</a>
+                    <a href="contactUs.html">Contact us</a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h2 class="footer-heading">Say hello</h2>
+                <p>Benin City, Nigeria</p>
+                <p><a href="contactUs.html">We'd love to hear from you →</a></p>
+            </div>
+        </div>
+        <div class="container footer-bottom"><span>© 2026 VELON Footwear</span><span>Made to move with you.</span></div>
+    </footer>
+</body>
+</html>

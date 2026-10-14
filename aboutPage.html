@@ -1,102 +1,95 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About-Page</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-
-    <body class="about-page latoRegular">
-        <nav class="navbar">
-            <div class="logo"></div>
-
-            <div class="nav-center">
-                <ul class="nav-menu latoRegular">
-                    <li><a href="/homePage.html">Home</a></li>
-                    <li><a href="/aboutPage.html">About Us</a></li>
-                    <li><a href="/contactUs.html">Contact Us</a></li>
-                    <li><a href="/catPage.html">Product page</a></li>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f6f2">
+    <meta name="description" content="Meet VELON Footwear: a point of view shaped by bold design, thoughtful details, and confidence in every step.">
+    <title>Our story — VELON Footwear</title>
+    <link rel="icon" type="image/png" href="images/logo-image/shoe-product-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body data-page="about">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="homePage.html" aria-label="VELON Footwear home">
+                <img src="images/logo-image/shoe-product-logo.png" alt="">
+                <span>VELON FOOTWEAR</span>
+            </a>
+            <div class="nav-center" id="primary-navigation">
+                <ul class="nav-menu">
+                    <li><a href="homePage.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="aboutPage.html" aria-current="page">Our story</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
                 </ul>
             </div>
-
-            <div class="nav-right">
-                <button class="chat-us-btn latoRegular">Chat with us</button>
+            <div class="nav-actions">
+                <button class="cart-button" type="button" data-open-cart aria-label="Open shopping bag">
+                    Bag <span class="cart-count" data-cart-count>0</span>
+                </button>
+                <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
             </div>
         </nav>
+    </header>
 
-        <div class="about-head-text">
-            <h1 class="about-head-text-topic cinzelDeco">ABOUT US 
-                <span class="about-head-text-word cinzelDeco">LUXURY ISN'T JUST CRAFTED - IT'S EMBODIED.</span>
-            </h1>
-
-            <div class="about-head-img"></div>
-
-            <p>At VELON Footwear, we don't just make shoes we create expressions of power, precision, and individuality. 
-                Each design tells a story of craftsmanship and courage - built for those who dare to walk differently.
-            </p>
-        </div>
-
-        <section class="about-section">
-            <div class="about-section-img-box">
-                <div class="about-section-img"></div>
-            </div>
-            <div class="about-section-text">
-                <p>
-                    Born from a passion for excellence and a love for bold aesthetics,
-                    our brand fuses street edge with timeless luxury.
-                    Every curve, stitch, and sole is redefined to perfection not for everyone, but for those who demand more.
-                    <span>
-                        We believe that style is not about blending in; it's about standing tall. 
-                        That's why we obsess over the smallest details - from material selection to the final polish - ensuring that every pair is 
-                        a masterpiece of comfort, confidence and class.
-                    </span>
-                </p>   
-            </div>
+    <main class="container">
+        <section class="about-hero">
+            <p class="eyebrow">A point of view in every step</p>
+            <h1>Luxury isn't just crafted. It's embodied.</h1>
+            <p>VELON Footwear is for people who know that what you wear can change how you move. We bring a fearless point of view to the shoes you reach for every day.</p>
+            <img src="images/aboutPageImg/aboutPage1.jpg" alt="A VELON-inspired footwear editorial">
         </section>
 
-        <div class="about-foot-text">
+        <section class="values-grid" aria-label="What we believe">
+            <article class="value-card">
+                <p class="eyebrow">01 / Design</p>
+                <h2>Stand out, naturally.</h2>
+                <p>Confident shapes and considered details do the talking without asking you to be anyone but yourself.</p>
+            </article>
+            <article class="value-card">
+                <p class="eyebrow">02 / Craft</p>
+                <h2>Details matter.</h2>
+                <p>From the lines of a silhouette to the finish of a sole, we believe the little things make the whole thing.</p>
+            </article>
+            <article class="value-card">
+                <p class="eyebrow">03 / Everyday</p>
+                <h2>Made to move.</h2>
+                <p>Personal style should feel as good as it looks. Our edit is built around confidence and all-day versatility.</p>
+            </article>
+        </section>
+
+        <section class="about-story">
+            <img src="images/aboutPageImg/aboutPage2.jpg" alt="A close-up from the VELON footwear story">
             <div>
-                <h1>VELON</h1>
-                <p>VELON isn’t just a brand. It’s a movement  for the fearless, the focused, and the unapologetically bold.</p>
+                <p class="eyebrow">Our story</p>
+                <h2>For the ones who walk their own way.</h2>
+                <p>Born from a love of bold aesthetics and everyday expression, VELON brings street edge and considered design together. We believe style isn't about blending in; it's about showing up exactly as you are.</p>
+                <p>Our point of view is simple: choose with intention, wear with confidence, and make every step your own.</p>
+                <a class="button" href="shop.html">Find your pair <span aria-hidden="true">→</span></a>
             </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">VELON FOOTWEAR<p>Move with intention. Make it yours.</p></div>
             <div>
-                <div class="about-foot-img"></div>
+                <h2 class="footer-heading">Explore</h2>
+                <div class="footer-links">
+                    <a href="shop.html">Shop all</a>
+                    <a href="homePage.html">Home</a>
+                    <a href="contactUs.html">Contact us</a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h2 class="footer-heading">Say hello</h2>
+                <p>Benin City, Nigeria</p>
+                <p><a href="contactUs.html">We'd love to hear from you →</a></p>
             </div>
         </div>
-
-        <footer class="latoRegular">
-
-            <div class="footer-container">
-                <div class="footer-header">
-                    <div class="footer-detail">
-                        <h3>Explore the collection" button leading to the shop.</h3>
-                        <button class="chat-us-btn latoRegular">SHOP WITH US</button>
-                    </div>
-
-                    <div class="footer-contact">
-                        <p>+234 810 405 1896</p>
-                        <p>Peculiarfurniture@gmail.com</p>
-                        <p>Benin, Nigeria</p>
-                        <div class="social-contact-list">
-                            <i class="fa-brands fa-facebook fa-2x facebook"></i>
-                            <div class="tiktok"></div>
-                            <div class="twitter"></div>
-                            <div class="instagram"></div>
-                        </div>
-                    </div> 
-                </div>
-
-                <div class="footer-content cinzelDeco">
-                    VENON <span>FOOTWARE</span>
-                </div>
-
-                <div class="footer-foot">
-                    <div class="footer-copy">Peculiar furniture reserved @ 2025</div>
-                    <div class="footer-t-c">Terms and Conditions</div>
-                </div>
-            </div>
-        </footer>
-    </body>
+        <div class="container footer-bottom"><span>© 2026 VELON Footwear</span><span>Made to move with you.</span></div>
+    </footer>
+</body>
 </html>
